@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.so
+.installed.cfg
+
+# Entornos virtuales
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Linting
+.ruff_cache/
+.mypy_cache/
+
+# Modelos entrenados (pesados — usar DVC o Git LFS)
+models/*.keras
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.bin
+# Descomenta si quieres rastrear los modelos:
+# !models/.gitkeep
+
+# Outputs generados
+outputs/
+!outputs/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Variables de entorno sensibles
+.env
+.env.local
+*.env
+
+# TensorFlow logs
+logs/
+runs/
+tensorboard/
+
+# Datos sensibles (nunca subir datos de estudiantes/docentes reales)
+# data/*.csv  # Descomenta si el dataset es privado
+# !data/.gitkeep
+
+# Temporales
+*.tmp
+*.bak
+*.orig
+tmp/
+temp/

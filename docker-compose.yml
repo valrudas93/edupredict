@@ -1,0 +1,19 @@
+services:
+  edupredict:
+    build: .
+    image: edupredict:latest
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+    command: ["app"]
+
+  train:
+    build: .
+    image: edupredict:latest
+    volumes:
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+    command: ["train"]
+    profiles: ["train"]
