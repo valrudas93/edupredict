@@ -44,14 +44,7 @@ coverage.xml
 .ruff_cache/
 .mypy_cache/
 
-# Modelos entrenados (pesados — usar DVC o Git LFS)
-models/*.keras
-models/*.pkl
-models/*.h5
-models/*.pt
-models/*.bin
-# Descomenta si quieres rastrear los modelos:
-# !models/.gitkeep
+# Modelos entrenados: se versionan directamente (~6MB, no requieren Git LFS)
 
 # Outputs generados
 outputs/
